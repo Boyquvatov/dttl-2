@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilni Tarjima Qilish Vositasi</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tilni Tarjima Qilish Vositasi</h1>
+        <div class="input-container">
+            <label for="source-lang">Manba tili:</label>
+            <select id="source-lang">
+                <option value="en">Inglizcha</option>
+                <option value="uz">O'zbekcha</option>
+                <option value="ru">Ruscha</option>
+            </select>
+            
+            <label for="target-lang">Ma'lumot tili:</label>
+            <select id="target-lang">
+                <option value="uz">O'zbekcha</option>
+                <option value="en">Inglizcha</option>
+                <option value="ru">Ruscha</option>
+            </select>
+        </div>
+
+        <div class="textarea-container">
+            <textarea id="input-text" placeholder="Tarjima qilish uchun matn kiriting..."></textarea>
+        </div>
+
+        <button onclick="translateText()">Tarjima qilish</button>
+
+        <div class="output-container">
+            <h2>Tarjima Natijasi:</h2>
+            <p id="output-text"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
